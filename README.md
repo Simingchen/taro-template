@@ -17,10 +17,21 @@ Taro 框架 (Taro + redux + scss + Taro-ui)，拿来即用的架子项目
 4. 入口文件 app.tsx 路由设置，windows 设置
 5. 使用 scss 样式预编译
 
+## 启动安装
 
-## 项目依赖安装
+项目依赖安装
 
 ```
 npm install
+
 ```
 
+运行 h5 
+```
+npm run dev:h5
+```
+
+## 文档 document
+
+[Taro](https://taro-docs.jd.com/taro/docs/tutorial.html)
+[Taro-ui](https://taro-ui.jd.com/#/docs/quickstart)
