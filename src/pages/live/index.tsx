@@ -1,8 +1,17 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
-import './index.less'
+import './index.scss'
+import PostItem from '@/components/common/postItem/index'
+import { AtList, AtListItem } from "taro-ui"
 
 export default class Index extends Component {
+  constructor (props) {
+    // super(props)
+    super(...arguments)
+    this.state = { 
+      postList: [...Array(10).keys()]
+    }
+  }
 
   componentWillMount () { }
 
@@ -27,8 +36,16 @@ export default class Index extends Component {
 
   render () {
     return (
-      <View className='test-page'>
-        <Text>Hello world!</Text>
+      <View className='live-page'>
+        <AtList>
+          <AtListItem title='标题文字' arrow='right' />
+          <AtListItem title='标题文字' note='描述信息' arrow='right' />
+        </AtList>
+        {
+          this.state.postList.map(item => {
+            return <PostItem></PostItem>
+          })
+        }
       </View>
     )
   }
