@@ -96,6 +96,7 @@ const config = {
   alias: {
     '@/components': path.resolve(__dirname, '..', 'src/components'),
     '@/utils': path.resolve(__dirname, '..', 'src/utils'),
+    '@/actions': path.resolve(__dirname, '..', 'src/actions'),
   },
   // 引入 sass
   sass: {

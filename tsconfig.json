@@ -25,6 +25,7 @@
     "paths": {
       "@/components/*": ["./src/components/*"],
       "@/utils/*": ["./src/utils/*"],
+      "@/actions/*": ["./src/actions/*"],
       "@/package": ["./package.json"],
       "@/project": ["./project.config.json"],
     }
