@@ -16,7 +16,7 @@ function updateStorage(data = {}) {
  * // NOTE 需要注意 RN 不支持 *StorageSync，此处用 async/await 解决
  * @param {*} options
  */
-const baseURL = "http://api.besmile.me"
+const baseURL = "http://api.test.me"
 
 export default async function fetch(options) {
   const { url, payload, method = 'GET', showToast = true, autoLogin = true } = options
@@ -62,7 +62,7 @@ export default async function fetch(options) {
 
     if (err.code === 600 && autoLogin) {
       Taro.navigateTo({
-        url: '/pages/user-login/user-login'
+        url: '/pages/user/login'
       })
     }
 
