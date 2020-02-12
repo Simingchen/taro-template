@@ -1,6 +1,6 @@
 # taro-template Taro 框架开发模版
 
-Taro 框架 (Taro + redux + scss + Taro-ui)，拿来即用的架子项目
+Taro 框架 (Taro + redux + scss + Taro-ui + request)，拿来即用的架子项目
 
 ## 配置好 config, request, store 等
 
