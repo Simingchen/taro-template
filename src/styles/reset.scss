@@ -1,7 +1,4 @@
 /*
- * @Date: 2020-01-02 16:40:50
- * @LastEditors  : Quincy
- * @LastEditTime : 2020-01-04 11:45:30
  * @Description: 样式重置
  */
 * {
@@ -96,4 +93,14 @@ canvas,
 progress,
 video {
   display: inline-block;
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0px;
+  height: 0px;
+}
+html {
+  color: #1f1f1f;
+  background: #f7f7f7;
 }

@@ -102,9 +102,7 @@ const config = {
   sass: {
     resource: [
       'src/styles/variable.scss',
-      'src/styles/global.scss',
       'src/styles/mixins.scss',
-      'src/styles/rest.scss',
       'src/styles/theme.scss',
     ],
     projectDirectory: path.resolve(__dirname, '..')
