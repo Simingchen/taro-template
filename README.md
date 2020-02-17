@@ -22,6 +22,7 @@ Taro 框架 (Taro + redux + scss + Taro-ui)
 
 目录结构
 
+
   ├── .temp                  // H5编译结果目录
   ├── .rn_temp               // RN编译结果目录
   ├── dist                   // 小程序编译结果目录
@@ -52,6 +53,7 @@ Taro 框架 (Taro + redux + scss + Taro-ui)
   ├── package.json
   └── tsconfig.jsson            // 配置
   
+  
 ## 启动安装
 
 项目依赖安装
@@ -72,10 +74,13 @@ npm run dev:weapp
 ## 文档 document
 
 [Taro](https://taro-docs.jd.com/taro/docs/tutorial.html)
+
 [Taro-ui](https://taro-ui.jd.com/#/docs/quickstart)
 
 
 [Taro 2.0.1 组件库文档](https://www.bookstack.cn/read/taro-2.0.1-components/96d11d925abbc107.md)
+
 [Taro 2.0.1 使用文档](https://www.bookstack.cn/read/taro-2.0.1/about.md)
+
 [Taro 2.0.1 API文档](https://www.bookstack.cn/read/taro-2.0.1-api/about.md)
 
