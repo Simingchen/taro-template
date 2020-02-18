@@ -1,14 +1,19 @@
 /*
  * @Description: 样式重置
  */
+
+/*  #ifdef  h5  */
+body {
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: env(safe-area-inset-bottom);
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-body {
-  -webkit-font-smoothing: antialiased;
-  padding-bottom: env(safe-area-inset-bottom);
+  -webkit-tap-hightlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-overflow-scrolling: touch;
 }
 input,
 button,
@@ -16,11 +21,7 @@ textarea {
   -webkit-appearance: none;
   border-radius: 0;
 }
-* {
-  -webkit-tap-hightlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-overflow-scrolling: touch;
-}
+
 body,
 button,
 input,
@@ -104,3 +105,42 @@ html {
   color: #1f1f1f;
   background: #f7f7f7;
 }
+/*  #endif  */
+
+// 小程序处理
+/*  #ifdef weapp */
+page {
+  color: #333;
+  font: 28px/1 "PingFang SC", "Helvetica Neue", "Hiragino Sans GB",
+    "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
+}
+
+button {
+  color: #333;
+}
+page,
+view,
+input,
+text,
+form,
+navigator,
+rich-text,
+picker,
+scroll-view,
+cover-view,
+open-data {
+  box-sizing: border-box;
+}
+rich-text,
+open-data,
+form {
+  display: block;
+}
+cover-view {
+  line-height: 1.5;
+  white-space: normal;
+}
+page{
+  background: #f7f7f7;
+}
+/*  #endif  */
