@@ -6,17 +6,27 @@ Taro 框架 (Taro + redux + scss + Taro-ui)
 ## 配置好 config, request, store 等
 
 1. 别名 (alias) '@' 的设置，h5 端口号的设置，引入 scss 全局变量等
- * tsconfig.json 下修改 paths 防止 vscode 编辑器报错
- * config/index.js 修改添加 h5 devServer 端口号
- * config/index.js 引入 sass 全局文件
+  * tsconfig.json 下修改 paths 防止 vscode 编辑器报错
+  * config/index.js 修改添加 h5 devServer 端口号
+  * config/index.js 引入 sass 全局文件
+  * copy 配置转移 wxparse 目录
+ 
 
 2. utils 工具引入
- * jump 处理 webview 跳转
- * request 请求封装 
+  * jump 处理 webview 跳转
+  * request 请求封装
+  * 小程序wx
 
 3. store 的封装
+  * redux 使用
+  
 4. 入口文件 app.tsx 路由设置，windows 设置
+  * 使用小程序分包机制
+ 
 5. 使用 scss 样式预编译
+  * 定义 mixins/variable.scss 全局变量等
+  * 添加小程序/H5重置样式区分
+  * 
 
 # 业务介绍
 
