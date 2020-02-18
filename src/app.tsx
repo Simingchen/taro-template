@@ -32,6 +32,14 @@ class App extends Component {
       'pages/mine/index',
       'pages/test/index',
     ],
+		subPackages: [
+				{
+					"root": "pagesSub/account",
+					"pages": [
+						"setting/index",
+					]
+				}
+		],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
