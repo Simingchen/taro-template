@@ -26,12 +26,15 @@ export default async function fetch(options) {
   const token = await getStorage('token')
   const header = token ? { 'jwt-token': token } : {}
 
-  if (method === 'POST') {
+  if (method.toUpperCase() === 'POST') {
     header['content-type'] = 'application/json'
   }
 
-  const params = data
-
+  if (method.toUpperCase() === 'DELETE') {
+    header['content-type'] = 'application/x-www-form-urlencoded'
+  }
+  
+  const reqParams = data
   // 显示加载
   if (isShowLoading) {
     Taro.showToast({
@@ -44,7 +47,7 @@ export default async function fetch(options) {
     url: baseURL + url,
     method,
     data,
-    header
+    header,
   }).then(async (response) => {
     Taro.hideToast()
     
@@ -87,10 +90,10 @@ export default async function fetch(options) {
       // 分页信息再包装，添加 finished 判断
       const finished =
         !data.hasNext ||
-        data.list.length < params.count
+        data.list.length < reqParams.count
       const page = {
         timeline: data.timeline,
-        count: params.count,
+        count: reqParams.count,
         finished
       }
       printList(response, logOptions,  page)
